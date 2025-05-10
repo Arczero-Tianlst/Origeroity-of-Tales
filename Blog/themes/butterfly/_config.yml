@@ -56,7 +56,8 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /images/avatar.png
+  shape: circle
   effect: false
 
 # Disable all banner images
@@ -66,7 +67,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: /images/Background.png
 
 # The banner image of archive page
 archive_img:
@@ -148,7 +149,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -163,7 +164,7 @@ subtitle:
   # 3 - jinrishici.com
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub:
+  sub: 欢迎来到我的博客！
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -257,7 +258,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2019
+    since: 2023-12-17
   custom_text:
   # Copyright of theme and framework
   copyright: true
@@ -285,7 +286,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/Arczero-Tianlst
   card_announcement:
     enable: true
     content: This is my Blog
