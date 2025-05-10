@@ -47,10 +47,6 @@
 ### 🎁 Bonus：你还可以用 `--draft` 管理草稿
 
 ```
-bash
-
-
-CopyEdit
 hexo new draft "未完成的文章"
 ```
 

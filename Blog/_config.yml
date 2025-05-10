@@ -103,4 +103,4 @@ theme: butterfly
 deploy:
   type: git
   repository: https://github.com/Arczero-Tianlst/Origeroity-of-Tales.git
-  branch: main
+  branch: gh-pages
