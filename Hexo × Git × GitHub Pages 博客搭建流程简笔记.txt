@@ -1,0 +1,30 @@
+## ✅ Hexo × Git × GitHub Pages 博客搭建流程简笔记
+
+### 📝 写文章流程
+
+```
+hexo new "标题"       # 创建一篇新文章
+vim source/_posts/标题.md  # 或用 Typora 编辑
+```
+
+### 🧹 构建本地页面
+
+```
+hexo clean     # 清除旧缓存
+hexo generate  # 生成静态网页到 public/
+hexo server    # 启动本地预览，localhost:4000
+```
+
+### 🚀 部署上线
+
+```
+hexo deploy    # 将 public 部署到 GitHub Pages
+```
+
+### 🌱 同步源码（文章 / 配置）
+
+```
+git add .
+git commit -m "✨ 新文章：XXX"
+git push
+```

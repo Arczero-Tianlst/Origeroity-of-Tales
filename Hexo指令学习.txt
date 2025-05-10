@@ -1,0 +1,58 @@
+话说，Hexo的指令都是啥意思？
+
+
+
+###### ChatGPT said:
+
+好问题喵！✨Hexo 虽然指令不多，但每一条都很有用，理解它们就像掌握了一套魔法咒语，小然现在就来帮你总结一份：
+
+------
+
+## 🧙 Hexo 常用命令大全（带解释）
+
+| 命令                        | 全称         | 作用                                                         |
+| --------------------------- | ------------ | ------------------------------------------------------------ |
+| `hexo init`                 | initialize   | 初始化一个新的 Hexo 博客项目（创建目录结构）                 |
+| `hexo new "标题"`           | new post     | 创建一篇新文章，生成 `source/_posts/标题.md` 文件            |
+| `hexo generate` 或 `hexo g` | generate     | 将 Markdown 渲染成 HTML，输出到 `public/` 目录               |
+| `hexo server` 或 `hexo s`   | start server | 启动本地预览服务器，默认 `http://localhost:4000`             |
+| `hexo deploy` 或 `hexo d`   | deploy       | 将生成的静态网页发布到远程仓库（如 GitHub Pages）            |
+| `hexo clean`                | clean cache  | 清除缓存、删除 `.deploy_git/` 和 `public/` 目录，避免残留问题 |
+| `hexo help`                 | help         | 显示 Hexo 支持的所有命令和帮助信息                           |
+
+
+
+------
+
+## 🧹 常用组合技
+
+| 场景                | 指令组合                                     |
+| ------------------- | -------------------------------------------- |
+| 本地预览            | `hexo clean && hexo g && hexo s`             |
+| 发布到 GitHub Pages | `hexo clean && hexo g && hexo d`             |
+| 新建文章            | `hexo new "标题"`，然后用 VSCode/Typora 编辑 |
+
+
+
+------
+
+## 🧠 补充说明：
+
+- `hexo g` 只生成，不预览
+- `hexo s` 启动预览时默认监听文件改动，改了文章会自动刷新
+- `hexo d` 需要你先配置好 `_config.yml` 里的 `deploy` 部分
+
+------
+
+### 🎁 Bonus：你还可以用 `--draft` 管理草稿
+
+```
+bash
+
+
+CopyEdit
+hexo new draft "未完成的文章"
+```
+
+草稿会放在 `source/_drafts/` 目录
+ 可以用 `hexo publish "标题"` 让草稿变正式文章
