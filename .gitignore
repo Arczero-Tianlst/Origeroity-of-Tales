@@ -1,2 +1,4 @@
 Blog/*
 !Blog/_config.yml
+!Blog/themes/
+!Blog/themes/butterfly/_config.yml
